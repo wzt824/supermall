@@ -1,6 +1,9 @@
 <template>
   <div class="cart-empty">
-    <i class="iconfont icon-gouwuche-copy"></i>
+    <!-- <i class="iconfont icon-gouwuche-copy"></i> -->
+    <div class="img">
+      <img src="~assets/img/cart/empty-cart.gif" alt="">
+    </div>
     <h5>购物车居然是空的</h5>
     <p>再忙，也要记得买点什么犒劳自己~</p>
     <button @click="backIndex">去逛逛</button>
@@ -29,16 +32,23 @@ export default {
     margin-top: 20%;
     touch-action: none;
     i{
-      font-size: 80px;
+      font-size: 240px;
       background: #eee;
       color: rgba(0, 0, 0, .6);
       border-radius: 50%;
+    }
+    .img{
+      width: 240px;
+      margin: 0 auto;
+      img{
+        width: 100%;
+      }
     }
 
     h5{
       font-size: 20px;
       line-height: 2;
-      margin-top: 10px;
+      margin-top: -10px;
     }
 
     p{

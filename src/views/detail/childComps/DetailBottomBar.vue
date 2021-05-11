@@ -1,15 +1,15 @@
 <template>
   <div class="bottom-bar">
     <div class="bar-item bar-left">
-      <div>
+      <div @click="getCustomer">
         <i class="iconfont icon-kefu"></i>
         <p class="text">客服</p>
       </div>
-      <div>
+      <div @click="getShop">
         <i class="iconfont icon-dianpu"></i>
         <p class="text">店铺</p>
       </div>
-      <div>
+      <div @click="collectionClick">
         <i class="iconfont icon-shoucang"></i>
         <p class="text">收藏</p>
       </div>
@@ -35,6 +35,15 @@ export default {
     },
     addToBuy(){
       this.$emit('addBuy')
+    },
+    collectionClick(){
+      this.$emit('collectClick')
+    },
+    getCustomer(){
+      this.$emit('getCustomer')
+    },
+    getShop(){
+      this.$emit('getShop')
     }
   }
 }

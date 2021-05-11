@@ -13,7 +13,11 @@
     </scroll>
     <back-top v-show="isShowBack" @click.native="backClick"></back-top>
     <detail-bottom-bar class="detail-bottom-bar"
-                       @addCart="addShopToCart" @addBuy="addShopToBuy"/>
+                       @getCustomer="getCustomer"
+                       @getShop="getShop"
+                       @collectClick="collectClick"
+                       @addCart="addShopToCart"
+                       @addBuy="addShopToBuy"/>
   </div>
 </template>
 
@@ -160,7 +164,17 @@ export default {
     },
 
     addShopToBuy(){
-      console.log("购买");
+      this.$toast.show("购买功能，暂未开放",2000)
+    },
+
+    collectClick(){
+      this.$toast.show("收藏功能，暂未开放",2000)
+    },
+    getCustomer(){
+      this.$toast.show("客服功能，暂未开放",2000)
+    },
+    getShop(){
+      this.$toast.show("商家店铺功能，暂未开放",2000)
     },
 
     // 获取数据

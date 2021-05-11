@@ -1,11 +1,20 @@
 <template>
   <div class="profile">
-    我的
+    <profile-nav-bar class="nav-bar" />
+    <profile-info/>
+    <profile-integral-info/>
+    <profile-order-info/>
+    <profile-function/>
   </div>
 </template>
 
 <script>
 import { requestAxios } from "../../network/request";
+import ProfileFunction from './childComps/ProfileFunction.vue';
+import ProfileInfo from './childComps/ProfileInfo.vue';
+import ProfileIntegralInfo from './childComps/ProfileIntegralInfo.vue';
+import ProfileNavBar from './childComps/ProfileNavBar.vue';
+import ProfileOrderInfo from './childComps/ProfileOrderInfo.vue';
 export default {
   name:'Pofile',
   data() {
@@ -23,11 +32,21 @@ export default {
     });
   },
   components: {
+    ProfileNavBar,
+    ProfileInfo,
+    ProfileIntegralInfo,
+    ProfileOrderInfo,
+    ProfileFunction
 
   }
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+  .profile{
+    .nav-bar{
+      background: var(--color-tint);
+      color: #fff;
+    }
+  }
 </style>

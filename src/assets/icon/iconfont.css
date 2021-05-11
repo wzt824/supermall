@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2519641 */
-  src: url('iconfont.woff2?t=1620610039379') format('woff2'),
-       url('iconfont.woff?t=1620610039379') format('woff'),
-       url('iconfont.ttf?t=1620610039379') format('truetype');
+  src: url('iconfont.woff2?t=1620718584575') format('woff2'),
+       url('iconfont.woff?t=1620718584575') format('woff'),
+       url('iconfont.ttf?t=1620718584575') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,62 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-daqiyecaigou-dingyue-copy-copy:before {
+  content: "\e815";
+}
+
+.icon-pingjia-copy:before {
+  content: "\e811";
+}
+
+.icon-youjian-copy:before {
+  content: "\e816";
+}
+
+.icon-daifahuo-copy:before {
+  content: "\e813";
+}
+
+.icon-zuo:before {
+  content: "\e6c9";
+}
+
+.icon-daishouhuo:before {
+  content: "\e605";
+}
+
+.icon-jifen:before {
+  content: "\e607";
+}
+
+.icon-xiangzuo-copy:before {
+  content: "\e606";
+}
+
+.icon-tuikuanshouhou:before {
+  content: "\e62e";
+}
+
+.icon-zuji:before {
+  content: "\e609";
+}
+
+.icon-huiyuanka:before {
+  content: "\e615";
+}
+
+.icon-shouji:before {
+  content: "\e608";
+}
+
+.icon-next-copy-copy:before {
+  content: "\e60a";
+}
+
+.icon-fukuan-copy:before {
+  content: "\e814";
 }
 
 .icon-gouwuche-copy:before {
