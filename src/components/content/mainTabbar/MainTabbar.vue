@@ -1,21 +1,21 @@
 <template>
   <tabbar>
-    <tabbar-item path='/home' activeColor='red'>
+    <tabbar-item path='/home' activeColor='#ff5777'>
       <i slot="item-icon" class="iconfont icon-yemian-copy"></i>
       <i slot="item-icon-active" class="iconfont icon-yemian-copy"></i>
       <div slot="item-text">首页</div>
     </tabbar-item>
-    <tabbar-item path='/category' activeColor='blue'>
+    <tabbar-item path='/category' activeColor='#ff5777'>
       <i slot="item-icon" class="iconfont icon-fenlei1"></i>
       <i slot="item-icon-active" class="iconfont icon-fenlei1"></i>
       <div slot="item-text">分类</div>
     </tabbar-item>
-    <tabbar-item path='/cart' activeColor='orange'>
+    <tabbar-item path='/cart' activeColor='#ff5777'>
       <i slot="item-icon" class="iconfont icon-gouwuche"></i>
       <i slot="item-icon-active" class="iconfont icon-gouwuche"></i>
       <div slot="item-text">购物车</div>
     </tabbar-item>
-    <tabbar-item path='/profile' activeColor='skyblue'>
+    <tabbar-item path='/profile' activeColor='#ff5777'>
       <i slot="item-icon" class="iconfont icon-wode"></i>
       <i slot="item-icon-active" class="iconfont icon-wode"></i>
       <div slot="item-text">我的</div>

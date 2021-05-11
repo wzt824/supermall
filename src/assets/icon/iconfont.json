@@ -6,6 +6,104 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "21524694",
+      "name": "大企业采购-订阅",
+      "font_class": "daqiyecaigou-dingyue-copy-copy",
+      "unicode": "e815",
+      "unicode_decimal": 59413
+    },
+    {
+      "icon_id": "21524595",
+      "name": "待评价",
+      "font_class": "pingjia-copy",
+      "unicode": "e811",
+      "unicode_decimal": 59409
+    },
+    {
+      "icon_id": "21525195",
+      "name": "邮件",
+      "font_class": "youjian-copy",
+      "unicode": "e816",
+      "unicode_decimal": 59414
+    },
+    {
+      "icon_id": "21524640",
+      "name": " 待发货",
+      "font_class": "daifahuo-copy",
+      "unicode": "e813",
+      "unicode_decimal": 59411
+    },
+    {
+      "icon_id": "804176",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "900019",
+      "name": "待收货_1",
+      "font_class": "daishouhuo",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "1685260",
+      "name": "积分",
+      "font_class": "jifen",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "2565978",
+      "name": "向左",
+      "font_class": "xiangzuo-copy",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "6917526",
+      "name": "退款售后",
+      "font_class": "tuikuanshouhou",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "10039566",
+      "name": "足迹",
+      "font_class": "zuji",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "15385092",
+      "name": "会员卡",
+      "font_class": "huiyuanka",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "20098547",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "20838478",
+      "name": "向左",
+      "font_class": "next-copy-copy",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "21524663",
+      "name": "待付款",
+      "font_class": "fukuan-copy",
+      "unicode": "e814",
+      "unicode_decimal": 59412
+    },
+    {
       "icon_id": "13366667",
       "name": "购物车",
       "font_class": "gouwuche-copy",

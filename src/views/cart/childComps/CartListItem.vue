@@ -3,12 +3,12 @@
     <div class="item-selector"> 
       <check-button @click.native="checkedChange" :is-checked="product.checked"></check-button>
     </div>
-    <div class="item-img">
+    <div class="item-img" @click="goDetail(product.iid)">
       <img :src="product.image" alt="商品图片">
     </div>
     <div class="item-info">
-      <div class="info-title">{{product.title}}</div>
-      <div class="info-desc">{{product.desc}}</div>
+      <div class="info-title" @click="goDetail(product.iid)">{{product.title}}</div>
+      <div class="info-desc" @click="goDetail(product.iid)">{{product.desc}}</div>
       <div class="info-bottom">
         <div class="bottom-price">{{product.price}}</div>
         <div class="bottom-count">
@@ -48,6 +48,10 @@ export default {
     },
     subCount(){
       this.$store.dispatch('subCart',this.product)
+    },
+    goDetail(id){
+      if (id !== undefined) return this.$router.push('/detail/'+id)
+      // this.$router.push('/detail'+id)
     }
   }
 }
