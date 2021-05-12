@@ -1,6 +1,6 @@
-// const ENV = process.env.NODE_ENV;
+const ENV = process.env.NODE_ENV;
 module.exports = {
-  // publicPath: ENV === "development" ? "" : "/supermall/",
+  publicPath: ENV === "development" ? "" : "/supermall/",
   // 配置别名
   configureWebpack: {
     resolve: {
