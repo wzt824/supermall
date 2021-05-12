@@ -35,3 +35,18 @@ export const backTopMixin = {
     },
   }
 }
+
+export const isLogin = {
+  methods:{
+    isLoginState(res,duration=2000){
+      if (!sessionStorage.getItem('token')){
+        this.$toast.show('亲，需要登录哟~',1000);
+        setTimeout(()=>{
+          this.$router.push('/login')
+        },1000)
+      }else{
+        this.$toast.show(res,duration);
+      }
+    }
+  }
+}

@@ -23,7 +23,7 @@
 
 <script>
 import { getDetails, getRecommend, Goods, Shop, GoodsParam } from "network/detailApi"
-import { itemImgLister, backTopMixin } from "common/mixin"
+import { itemImgLister, backTopMixin, isLogin } from "common/mixin"
 import { debounce } from "common/utils"
 import { mapActions } from "vuex"
 
@@ -41,7 +41,7 @@ import DetailBottomBar from './childComps/DetailBottomBar.vue';
 
 export default {
   name:'Detail',
-  mixins:[itemImgLister, backTopMixin],
+  mixins:[itemImgLister, backTopMixin, isLogin],
   data() {
     return {
       goodsId: null,
@@ -140,6 +140,7 @@ export default {
     },
 
     addShopToCart(){
+      if (!sessionStorage.getItem('token')) return this.isLoginState('亲，需要登录哟~');
       // 获取购物车需要展示的信息
       const product = {};
       product.image = this.topImages[0];
@@ -148,33 +149,23 @@ export default {
       product.price = this.goods.realPrice;
       product.iid = this.goodsId;
       // 将商品添加到购物车(Vuex)
-      // this.$store.dispatch('addCart',product).then(res=>{
-      //   console.log(res);
-      // })
       this.addCart(product).then(res=>{
-        // this.isToastShow = true;
-        // this.test = res;
-
-        // setTimeout(()=>{
-        //   this.isToastShow = false;
-        //   this.test = '';
-        // },2000)
         this.$toast.show(res,2000)
       })
     },
 
     addShopToBuy(){
-      this.$toast.show("购买功能，暂未开放",2000)
+      this.isLoginState("购买功能，暂未开放");
     },
 
     collectClick(){
-      this.$toast.show("收藏功能，暂未开放",2000)
+      this.isLoginState("收藏功能，暂未开放")
     },
     getCustomer(){
-      this.$toast.show("客服功能，暂未开放",2000)
+      this.isLoginState("客服功能，暂未开放")
     },
     getShop(){
-      this.$toast.show("商家店铺功能，暂未开放",2000)
+      this.isLoginState("商家店铺功能，暂未开放")
     },
 
     // 获取数据

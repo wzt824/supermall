@@ -1,3 +1,6 @@
 export default {
-  cartList: []
+  cartList: [],
+  currentUser: null,
+  loginFlag: false,
+  token: ''
 }

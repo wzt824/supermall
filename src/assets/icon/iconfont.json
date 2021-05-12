@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "16639569",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "18046852",
+      "name": "密 码",
+      "font_class": "password",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
       "icon_id": "21524694",
       "name": "大企业采购-订阅",
       "font_class": "daqiyecaigou-dingyue-copy-copy",

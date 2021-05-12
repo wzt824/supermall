@@ -5,7 +5,7 @@
         <img src="../../../assets/img/profile/avatar.svg" alt="">
       </div>
       <div>
-        <h3 class="user-name">登录/注册</h3>
+        <h3 class="user-name">{{userInfo ? userInfo.username :'登录/注册'}}</h3>
         <p>
           <i class="iconfont icon-shouji"></i><span class="user-phone">暂无绑定手机号</span>
         </p>
@@ -23,8 +23,13 @@ export default {
 
     }
   },
-  components: {
-
+  props: {
+    userInfo:{
+      type: Object,
+      default(){
+        return {}
+      }
+    }
   }
 }
 </script>

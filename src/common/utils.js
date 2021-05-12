@@ -1,5 +1,8 @@
 // 函数节流
 // 原理：控制事件执行的间隔； 场景：resize、scroll、mousemove、click
+
+import Vue from "vue";
+
 /**
  * 4.函数节流
  * @param {回调函数} callback 

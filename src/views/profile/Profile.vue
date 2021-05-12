@@ -1,7 +1,7 @@
 <template>
   <div class="profile">
     <profile-nav-bar class="nav-bar" />
-    <profile-info/>
+    <profile-info :user-info="user"/>
     <profile-integral-info/>
     <profile-order-info/>
     <profile-function/>
@@ -9,7 +9,8 @@
 </template>
 
 <script>
-import { requestAxios } from "../../network/request";
+import { mapState } from "vuex"
+
 import ProfileFunction from './childComps/ProfileFunction.vue';
 import ProfileInfo from './childComps/ProfileInfo.vue';
 import ProfileIntegralInfo from './childComps/ProfileIntegralInfo.vue';
@@ -19,17 +20,8 @@ export default {
   name:'Pofile',
   data() {
     return {
-
+     
     }
-  },
-  created(){
-    requestAxios({
-      url: '/home/multidata'
-    }).then((result) => {
-      console.log(result);
-    }).catch((err) => {
-      console.log(err);
-    });
   },
   components: {
     ProfileNavBar,
@@ -37,7 +29,15 @@ export default {
     ProfileIntegralInfo,
     ProfileOrderInfo,
     ProfileFunction
-
+  },
+  computed:{
+    // ...mapState(['token'])
+    user () {
+      return this.$store.state.currentUser
+    }
+  },
+  created(){
+    console.log(this.user);
   }
 }
 </script>

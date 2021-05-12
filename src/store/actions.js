@@ -3,7 +3,8 @@ import {
   ADD_COUNTER, 
   ADD_TO_CART,
   SUB_COUNTER, 
-  SUB_TO_CART
+  SUB_TO_CART,
+  USER_STATE
 } from "./mutations-types"
 
 export default {
@@ -36,5 +37,22 @@ export default {
         resolve("当前商品数量-1")
       }
     })
+  },
+  userState(context, user){
+    if (user != null) {
+      context.commit(USER_STATE,{
+        currentUser: user,
+        loginFlag: true,
+        token: user.token
+      })
+    }else{
+      sessionStorage.removeItem('userInfo')
+      sessionStorage.removeItem('token')
+      context.commit(USER_STATE,{
+        currentUser: null,
+        loginFlag: false,
+        token: ""
+      })
+    }
   }
 }

@@ -4,5 +4,11 @@ export default {
   },
   cartList(state){
     return state.cartList
+  },
+  currentUser(state){
+    return state.currentUser
+  },
+  loginFlag(state){
+    return state.loginFlag
   }
 }

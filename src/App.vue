@@ -3,7 +3,7 @@
     <keep-alive exclude="Detail">
       <router-view/>
     </keep-alive>
-    <main-tabbar/>
+    <main-tabbar v-if="!$route.meta.showNav"/>
   </div>
 </template>
 
@@ -19,6 +19,9 @@ export default {
   },
   components: {
     MainTabbar
+  },
+  mounted(){
+    this.$store.dispatch('userState',JSON.parse(sessionStorage.getItem('userInfo')))
   }
 }
 </script>
